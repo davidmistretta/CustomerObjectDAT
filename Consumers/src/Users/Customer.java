@@ -14,9 +14,10 @@ public class Customer extends Person
 	 */
 	private static final long serialVersionUID = 1L;
 	private String m_customerNumber;
-	private boolean m_mailingList = true; //opt out mailing list
+	private boolean m_mailingList = true; //default for customers
 	public Customer()
 	{
+		System.out.println("Customer no arg construc");
 		m_customerNumber = "";
 	}
 	public Customer(String name, String address, String phoneNumber, String customerNumber)
@@ -66,7 +67,8 @@ public class Customer extends Person
 		str = "Customer"
 				+ "\nName: " + getName()
 				+ "\nAddress: " + getAddress()
-				+ "\nPhone Number: " + getPhoneNumber();
+				+ "\nPhone Number: " + getPhoneNumber()
+				+ "\nCustomer Number: " + getCustomerNumber();
 		return str;
 	}
 	
