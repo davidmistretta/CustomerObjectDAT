@@ -1,9 +1,9 @@
 package Users;
-
+import java.io.*;
 /*
  * Super Class for Customers
  */
-public class Person
+public class Person implements Serializable
 {
 	/*
 	 * Fields
