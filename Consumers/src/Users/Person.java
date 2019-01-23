@@ -27,6 +27,7 @@ public class Person
 	}
 	public Person() 
 	{
+		System.out.println("Person no arg construct");
 		m_name = "";
 		m_phoneNumber = "";
 		m_address = "";
@@ -78,23 +79,5 @@ public class Person
 	{
 		m_address = address;
 	} 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
